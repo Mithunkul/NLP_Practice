@@ -24,4 +24,29 @@ fdist1 |= fdist2	update fdist1 with counts from fdist2
 fdist1 < fdist2	test if samples in fdist1 occur less frequently than in fdist2
 
 raw, words, sents
-word_tokenize			
+word_tokenize
+
+encode - decode - utf-8,latin-2,
+
+REGEX
+
+Operator	Behavior
+.	Wildcard, matches any character
+^abc	Matches some pattern abc at the start of a string
+abc$	Matches some pattern abc at the end of a string
+[abc]	Matches one of a set of characters
+[A-Z0-9]	Matches one of a range of characters
+ed|ing|s	Matches one of the specified strings (disjunction)
+*	Zero or more of previous item, e.g. a*, [a-z]* (also known as Kleene Closure)
++	One or more of previous item, e.g. a+, [a-z]+
+?	Zero or one of the previous item (i.e. optional), e.g. a?, [a-z]?
+{n}	Exactly n repeats where n is a non-negative integer
+{n,}	At least n repeats
+{,n}	No more than n repeats
+{m,n}	At least m and no more than n repeats
+a(b|c)+	Parentheses that indicate the scope of the operators
+
+
+Stemming - Porter and Lancester
+Lemmatization - 
+			
